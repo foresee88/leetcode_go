@@ -2,7 +2,7 @@
 package main
 
 import (
-	"github.com/foresee88/leetcode_go/Algorithms/common"
+	"Algorithms/common"
 )
 
 /*
