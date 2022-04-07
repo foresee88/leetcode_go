@@ -1,14 +1,14 @@
-package common
+package main
 
 import "fmt"
 
-//Definition for singly-linked list.
+// ListNode Definition for singly-linked list.
 type ListNode struct {
 	Val  int
 	Next *ListNode
 }
 
-// 将入参数字转换成ListNode列表
+// Num2List 将入参数字转换成ListNode列表
 func Num2List(n ...int) *ListNode {
 	ret := ListNode{Val: n[0], Next: nil}
 	p := &ret
@@ -19,8 +19,7 @@ func Num2List(n ...int) *ListNode {
 	return &ret
 }
 
-
-// 打印ListNode列表，输出格式"1 -> 2 -> 3"
+// PrintList 打印ListNode列表，输出格式"1 -> 2 -> 3"
 func PrintList(l *ListNode) {
 	var s string
 	for ; l != nil; l = l.Next {

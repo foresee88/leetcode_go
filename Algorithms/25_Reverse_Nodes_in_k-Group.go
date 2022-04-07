@@ -1,9 +1,5 @@
 package main
 
-import (
-	"Algorithms/common"
-)
-
 /*
 25. Reverse Nodes in k-Group
 Hard
@@ -45,7 +41,7 @@ You may not alter the values in the list's nodes, only nodes itself may be chang
  * }
  */
 
-type ListNode = common.ListNode
+//type ListNode = ListNode
 
 func reverseList(l *ListNode) (head, end *ListNode) {
 	var h, e *ListNode
@@ -121,9 +117,9 @@ func reverseKGroup(head *ListNode, k int) *ListNode {
 
 
 func main() {
-	common.PrintList(reverseKGroup(common.Num2List(1, 2), 3))
-	common.PrintList(reverseKGroup(common.Num2List(1, 2, 3), 3))
-	common.PrintList(reverseKGroup(common.Num2List(1, 2, 3, 4), 3))
-	common.PrintList(reverseKGroup(common.Num2List(1, 2, 3, 4, 5, 6), 3))
-	common.PrintList(reverseKGroup(common.Num2List(1, 2, 3, 4, 5, 6, 7, 8), 3))
+	PrintList(reverseKGroup(Num2List(1, 2), 3))
+	PrintList(reverseKGroup(Num2List(1, 2, 3), 3))
+	PrintList(reverseKGroup(Num2List(1, 2, 3, 4), 3))
+	PrintList(reverseKGroup(Num2List(1, 2, 3, 4, 5, 6), 3))
+	PrintList(reverseKGroup(Num2List(1, 2, 3, 4, 5, 6, 7, 8), 3))
 }

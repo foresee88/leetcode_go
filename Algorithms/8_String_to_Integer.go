@@ -1,5 +1,3 @@
-//package ___String_to_Integer
-
 package main
 
 /*
@@ -50,5 +48,5 @@ Explanation: The number "-91283472332" is out of the range of a 32-bit signed in
 
 //todo
 func myAtoi(str string) int {
-
+	return 0
 }

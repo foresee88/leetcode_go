@@ -1,9 +1,5 @@
 package main
 
-import (
-	"Algorithms/common"
-)
-
 /*
 
 23. Merge k Sorted Lists
@@ -37,7 +33,7 @@ Output: 1->1->2->3->4->4->5->6
  * }
  */
 
-type ListNode = common.ListNode
+//type ListNode = ListNode
 
 func mergeKLists(lists []*ListNode) *ListNode {
 	// 预处理，清除空的列表
@@ -83,22 +79,22 @@ func mergeKLists(lists []*ListNode) *ListNode {
 
 
 func main() {
-	lists := []*ListNode{common.Num2List(1, 4, 5), common.Num2List(1, 3, 4), common.Num2List(2, 6)}
-	common.PrintList(mergeKLists(lists))
+	lists := []*ListNode{Num2List(1, 4, 5), Num2List(1, 3, 4), Num2List(2, 6)}
+	PrintList(mergeKLists(lists))
 
-	lists1 := []*ListNode{common.Num2List(1, 4, 5), common.Num2List(2, 3)}
-	common.PrintList(mergeKLists(lists1))
+	lists1 := []*ListNode{Num2List(1, 4, 5), Num2List(2, 3)}
+	PrintList(mergeKLists(lists1))
 
-	lists2 := []*ListNode{nil, common.Num2List(1)}
-	common.PrintList(mergeKLists(lists2))
+	lists2 := []*ListNode{nil, Num2List(1)}
+	PrintList(mergeKLists(lists2))
 
 	lists3 := []*ListNode{}
-	common.PrintList(mergeKLists(lists3))
+	PrintList(mergeKLists(lists3))
 
-	lists4 := []*ListNode{common.Num2List(1), common.Num2List(0)}
-	common.PrintList(mergeKLists(lists4))
+	lists4 := []*ListNode{Num2List(1), Num2List(0)}
+	PrintList(mergeKLists(lists4))
 
-	lists5 := []*ListNode{common.Num2List(-1, -1, -1), common.Num2List(-2, -2, -1)}
-	common.PrintList(mergeKLists(lists5))
+	lists5 := []*ListNode{Num2List(-1, -1, -1), Num2List(-2, -2, -1)}
+	PrintList(mergeKLists(lists5))
 
 }

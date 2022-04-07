@@ -1,9 +1,5 @@
 package main
 
-import (
-	"Algorithms/common"
-)
-
 /*
 
 19. Remove Nth Node From End of List
@@ -40,7 +36,7 @@ Could you do this in one pass?
  * }
  */
 
-type ListNode = common.ListNode
+//type ListNode = ListNode
 
 func getListLen(l *ListNode) int {
 	i := 0
@@ -72,8 +68,8 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 }
 
 func main() {
-	common.PrintList(removeNthFromEnd(common.Num2List(1, 2, 3, 4, 5), 1))
-	common.PrintList(removeNthFromEnd(common.Num2List(1, 2, 3, 4, 5), 0))
-	common.PrintList(removeNthFromEnd(common.Num2List(1, 2, 3, 4, 5), 5))
-	common.PrintList(removeNthFromEnd(common.Num2List(1, 2, 3, 4, 5), 2))
+	PrintList(removeNthFromEnd(Num2List(1, 2, 3, 4, 5), 1))
+	PrintList(removeNthFromEnd(Num2List(1, 2, 3, 4, 5), 0))
+	PrintList(removeNthFromEnd(Num2List(1, 2, 3, 4, 5), 5))
+	PrintList(removeNthFromEnd(Num2List(1, 2, 3, 4, 5), 2))
 }

@@ -202,7 +202,7 @@ func addCh(bsp *[]byte, b byte, n int) {
 	}
 }
 
-func convert(bsp *[]byte, num int, digit int, a byte, b byte, c byte) {
+func convert12(bsp *[]byte, num int, digit int, a byte, b byte, c byte) {
 	n := num/digit
 	switch n {
 	case 4:
@@ -230,13 +230,13 @@ func intToRoman(num int) string {
 	addCh(&bs, 'M', nM)
 
 	num = num % 1000
-	convert(&bs, num, 100, 'C', 'D', 'M')
+	convert12(&bs, num, 100, 'C', 'D', 'M')
 
 	num = num % 100
-	convert(&bs, num, 10,'X', 'L', 'C')
+	convert12(&bs, num, 10,'X', 'L', 'C')
 
 	num = num % 10
-	convert(&bs, num, 1,'I', 'V', 'X')
+	convert12(&bs, num, 1,'I', 'V', 'X')
 
 	s := string(bs)
 	return s

@@ -1,10 +1,6 @@
 //package main
 package main
 
-import (
-	"Algorithms/common"
-)
-
 /*
 
 2. Add Two Numbers
@@ -37,7 +33,7 @@ Explanation: 342 + 465 = 807.
  * }
  */
 
-type ListNode = common.ListNode
+//type ListNode = ListNode
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	ret := &ListNode{Val: (l1.Val + l2.Val) % 10, Next: nil}
@@ -68,6 +64,6 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 
 
 func main() {
-	common.PrintList(addTwoNumbers(common.Num2List(2, 4, 3), common.Num2List(5, 6, 4)))
-	common.PrintList(addTwoNumbers(common.Num2List(7), common.Num2List(5, 0, 5)))
+	PrintList(addTwoNumbers(Num2List(2, 4, 3), Num2List(5, 6, 4)))
+	PrintList(addTwoNumbers(Num2List(7), Num2List(5, 0, 5)))
 }
