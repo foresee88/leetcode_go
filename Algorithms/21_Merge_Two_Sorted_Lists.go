@@ -41,8 +41,44 @@ Both list1 and list2 are sorted in non-decreasing order.
 
 package main
 
-//type ListNode = ListNode
-
 func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
- 	return nil
+	var l, c *ListNode
+	if list1 == nil {
+		return list2
+	}
+	if list2 == nil {
+		return list1
+	}
+	if list1.Val > list2.Val {
+		l, c = list2, list2
+		list2 = list2.Next
+	} else {
+		l, c = list1, list1
+		list1 = list1.Next
+	}
+	for list1 != nil && list2 != nil {
+		if list1.Val > list2.Val {
+			c.Next = list2
+			c = c.Next
+			list2 = list2.Next
+		} else {
+			c.Next = list1
+			c = c.Next
+			list1 = list1.Next
+		}
+	}
+	if list1 != nil{
+		c.Next = list1
+	} else if list2 != nil{
+		c.Next = list2
+	}
+
+	return l
+
+}
+
+func main() {
+	PrintList(mergeTwoLists(Num2List(1, 2, 4), Num2List(1, 3, 4)))
+	PrintList(mergeTwoLists(Num2List(2), Num2List(1)))
+	PrintList(mergeTwoLists(nil, nil))
 }
