@@ -25,7 +25,7 @@ LeetCode
 |18|[4Sum](https://leetcode.com/problems/4sum/)| [go](./Algorithms/18_4Sum.go)|Medium|
 |19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)| [go](./Algorithms/19_Remove_Nth_Node_From_End_of_List.go)|Easy|
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| [go](./Algorithms/20_Valid_Parentheses.go)|Easy|
-|21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)| |Easy|
+|21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)| [go](./Algorithms/21_Merge_Two_Sorted_Lists.go)|Easy|
 |22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)| |Medium|
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)| [go](./Algorithms/23_Merge_k_Sorted_Lists.go)|Hard|
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)| |Medium|
