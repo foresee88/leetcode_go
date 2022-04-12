@@ -56,28 +56,35 @@ Submissions
 func findSubstring(s string, words []string) []int {
 	var as []string
 	var ai []int
-	perm(words, 0, len(words)-1, &as )
+	perm(words, 0, len(words)-1, &as)
 
-	m := make(map[string]string)
-	for _, sub := range as {
-		m[sub]=sub
-	}
-	if len(m) != len(as) {
-		as = []string{}
-		for _, v := range m {
-			as = append(as, v)
-		}
-	}
-	for _, sub := range as {
-		if strings.Count(s, sub) > 1 {
 
-		}
-		i := strings.Index(s, sub)
 
-		if i != -1 {
-			ai = append(ai, i)
-		}
-	}
+	//m := make(map[string]string)
+	//for _, sub := range as {
+	//	m[sub] = sub
+	//}
+	//if len(m) != len(as) {
+	//	as = []string{}
+	//	for _, v := range m {
+	//		as = append(as, v)
+	//	}
+	//}
+	fmt.Println(as)
+	fmt.Println(s)
+
+	//for _, sub := range as {
+	//	m, ss := 0, s
+	//	for len(ss) >= len(sub) {
+	//		i := strings.Index(ss, sub)
+	//		if i == -1{
+	//			break
+	//		}
+	//		ai = append(ai, m+i)
+	//		ss = ss[i+1:]
+	//		m += i+1
+	//	}
+	//}
 	return ai
 }
 
@@ -99,8 +106,11 @@ func swap(o []string, i int, j int) {
 	o[j] = tmp
 }
 
-func main(){
-
-	ai := findSubstring("foobarfoobar", []string{"foo","bar"})
-	fmt.Println(ai)
+func main() {
+	//ai := findSubstring("foobarfoobar", []string{"foo", "bar"})
+	//fmt.Println(ai)
+	//ai1 := findSubstring("a", []string{"a"})
+	//fmt.Println(ai1)
+	ai2 := findSubstring("pjzkrkevzztxductzzxmxsvwjkxpvukmfjywwetvfnujhweiybwvvsrfequzkhossmootkmyxgjgfordrpapjuunmqnxxdrqrfgkrsjqbszgiqlcfnrpjlcwdrvbumtotzylshdvccdmsqoadfrpsvnwpizlwszrtyclhgilklydbmfhuywotjmktnwrfvizvnmfvvqfiokkdprznnnjycttprkxpuykhmpchiksyucbmtabiqkisgbhxngmhezrrqvayfsxauampdpxtafniiwfvdufhtwajrbkxtjzqjnfocdhekumttuqwovfjrgulhekcpjszyynadxhnttgmnxkduqmmyhzfnjhducesctufqbumxbamalqudeibljgbspeotkgvddcwgxidaiqcvgwykhbysjzlzfbupkqunuqtraxrlptivshhbihtsigtpipguhbhctcvubnhqipncyxfjebdnjyetnlnvmuxhzsdahkrscewabejifmxombiamxvauuitoltyymsarqcuuoezcbqpdaprxmsrickwpgwpsoplhugbikbkotzrtqkscekkgwjycfnvwfgdzogjzjvpcvixnsqsxacfwndzvrwrycwxrcismdhqapoojegggkocyrdtkzmiekhxoppctytvphjynrhtcvxcobxbcjjivtfjiwmduhzjokkbctweqtigwfhzorjlkpuuliaipbtfldinyetoybvugevwvhhhweejogrghllsouipabfafcxnhukcbtmxzshoyyufjhzadhrelweszbfgwpkzlwxkogyogutscvuhcllphshivnoteztpxsaoaacgxyaztuixhunrowzljqfqrahosheukhahhbiaxqzfmmwcjxountkevsvpbzjnilwpoermxrtlfroqoclexxisrdhvfsindffslyekrzwzqkpeocilatftymodgztjgybtyheqgcpwogdcjlnlesefgvimwbxcbzvaibspdjnrpqtyeilkcspknyylbwndvkffmzuriilxagyerjptbgeqgebiaqnvdubrtxibhvakcyotkfonmseszhczapxdlauexehhaireihxsplgdgmxfvaevrbadbwjbdrkfbbjjkgcztkcbwagtcnrtqryuqixtzhaakjlurnumzyovawrcjiwabuwretmdamfkxrgqgcdgbrdbnugzecbgyxxdqmisaqcyjkqrntxqmdrczxbebemcblftxplafnyoxqimkhcykwamvdsxjezkpgdpvopddptdfbprjustquhlazkjfluxrzopqdstulybnqvyknrchbphcarknnhhovweaqawdyxsqsqahkepluypwrzjegqtdoxfgzdkydeoxvrfhxusrujnmjzqrrlxglcmkiykldbiasnhrjbjekystzilrwkzhontwmehrfsrzfaqrbbxncphbzuuxeteshyrveamjsfiaharkcqxefghgceeixkdgkuboupxnwhnfigpkwnqdvzlydpidcljmflbccarbiegsmweklwngvygbqpescpeichmfidgsjmkvkofvkuehsmkkbocgejoiqcnafvuokelwuqsgkyoekaroptuvekfvmtxtqshcwsztkrzwrpabqrrhnlerxjojemcxel", []string{"dhvf","sind","ffsl","yekr","zwzq","kpeo","cila","tfty"})
+	fmt.Println(ai2)
 }

@@ -26,16 +26,16 @@ LeetCode
 |19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)| [go](./Algorithms/19_Remove_Nth_Node_From_End_of_List.go)|Easy|
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| [go](./Algorithms/20_Valid_Parentheses.go)|Easy|
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)| [go](./Algorithms/21_Merge_Two_Sorted_Lists.go)|Easy|
-|22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)| |Medium|
+|22|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)| [go](./Algorithms/22_Generate_Parentheses.go)|Medium|
 |23|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)| [go](./Algorithms/23_Merge_k_Sorted_Lists.go)|Hard|
-|24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)| |Medium|
+|24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)| [go](./Algorithms/24_Swap_Nodes_in_Pairs.go)|Medium|
 |25|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)| [go](./Algorithms/25_Reverse_Nodes_in_k-Group.go)|Hard|
 |26|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)| |Easy|
 |27|[Remove Element](https://leetcode.com/problems/remove-element/)| |Easy|
 |28|[Implement strStr()](https://leetcode.com/problems/implement-strstr/)| |Easy|
 |29|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)| |Medium|
 |30|[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)| |Hard|
-|31|[Next Permutation](https://leetcode.com/problems/next-permutation/)||Medium|
+|31|[Next Permutation](https://leetcode.com/problems/next-permutation/)| |Medium|
 |32|[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)| |Hard|
 |33|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)| [go](./Algorithms/33_Search_in_Rotated_Sorted_Array.go)|Hard|
 |34|[Search for a Range](https://leetcode.com/problems/search-for-a-range/)| |Medium|
