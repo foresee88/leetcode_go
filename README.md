@@ -1,6 +1,19 @@
 LeetCode
 ========
 
+## 仓库目的
+
+本仓库用于记录和归档 LeetCode 题目的 Go 语言题解，主要目的是练习算法与数据结构、保留不同时期的解题思路，并按题号整理，方便回顾、检索和分享。
+
+题解统一放在 [`Algorithms/`](./Algorithms) 目录，均使用 `package main`。多数题解文件带有 `main` 函数用于演示示例；链表等公共数据结构与辅助函数集中在 [`Algorithms/common.go`](./Algorithms/common.go)。带 `main` 的题解可通过 `go run Algorithms/<文件名>.go Algorithms/common.go` 单独运行。
+
+## 更新规范
+
+1. **目录与命名**：题解统一放在 `Algorithms/` 目录，文件名为 `题号_英文标题.go`（如 `15_3Sum.go`）；标题取自 LeetCode 原题，单词之间用下划线连接。
+2. **文件结构**：保持 `package main` 形式，文件开头保留原题描述注释，随后给出解法函数；可复用的数据结构或辅助函数放入 `common.go`，避免在多个题解文件中重复定义。
+3. **README 表格**：新增题解后，在下方表格中按题号升序补充对应行：`Title` 链接到 LeetCode 原题页面，`Solution` 填写 `[go](./Algorithms/文件名.go)`，`Difficulty` 按原题填写 Easy/Medium/Hard；尚未实现的题目将 `Solution` 留空。
+4. **提交**：每次提交尽量只包含一道或少量相关题目的改动，提交信息简要说明本次更新的题号或内容（如 `22`、`readme`）。
+
 ### LeetCode Algorithm
 
 | # | Title | Solution | Difficulty |
